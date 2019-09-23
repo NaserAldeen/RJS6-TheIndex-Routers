@@ -15,7 +15,7 @@ function BookTable(props) {
           <th>Color</th>
         </tr>
       </thead>
-      <tbody>{bookRows}</tbody>
+      <tbody>{props.bookRow ? props.bookRow() : bookRows}</tbody>
     </table>
   );
 }
